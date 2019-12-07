@@ -1,0 +1,56 @@
+/*este es el estilo de portfolio de Adrian */
+/*body {background-color: black;}*/
+body{background-color: rgba(96, 240, 197, 0.5);}
+
+#wrapper{width: 85%;
+    /*height: 600px;/*luego lo borro*/
+    background-color: white;
+    margin: auto;}
+
+header{position: relative;/*para que el titulo que va dentro lo pueda colocar con absolute donde quiera*/
+    background-image: url("imagenesportfolio/headerweb.jpg");
+    height: 300px;
+    background-size: cover;
+    /*cover adapta bien la imagen pero la acorta*/
+    background-position: right;
+    /*mi imagen tiene lo importante a la derecha*/}
+
+#titulo{position: absolute;
+        width:35%;
+        top:180px;
+
+        /*para que el navegador calcule bien el centro donde poner el titulo hay que indicarle estas cuatro cosas*/
+        left:0px;
+        right:0px;
+        margin-left:auto;
+        margin-right: auto;
+
+        font-family: 'Rubik', sans-serif;
+        font-size:2em;
+        background-color:rgba(96, 240, 197, 0.5);
+        text-align: center;
+        border-radius: 20px;
+        color: dodgerblue;}
+/*Aqui empieza el estilo de main*/
+        div.polaroid {
+            width: 40%;
+            background-color: white;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            margin-bottom: 25px;
+            float:left;
+            margin:4%
+          }
+          div.polaroid:hover{
+          opacity:0.5}
+          
+          div.container {
+            text-align: center;
+            padding: 10px 20px;
+          }
+h1{text-align: center;
+        border-bottom:3px solid dodgerblue;
+        font-family: 'Rubik', sans-serif;}
+
+@media only screen and (max-width:500px){
+    div.polaroid{width: 90%;}
+}

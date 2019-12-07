@@ -1,0 +1,42 @@
+/*este es el estilo de mi pagina de recetas*/
+body{background-image: url(imagenes/fondo.jpg);
+    background-size: 25%;}/*buscar un mantel de cocina*/
+
+#wrapper{width: 80%;/*ancho*/
+        height: 600px; /*luego lo quito*/
+        overflow:auto; /*por si no cabe el contenido del texto*/
+        background-color: white;
+        margin:auto;
+        padding: 2vw;
+        border:1px solid black;
+        font-family: 'Days One', sans-serif;}
+h1{text-align: center;
+    color:orange;
+    border-bottom: 3px solid orange;
+    }
+ul{list-style-image: url(imagenes/potato.jpg);}
+h2{color:#24BCB0;
+    border-left: 3px solid orange;
+    border-bottom: 3px solid orange;
+    padding: 5px;/*espaciado por dentro*/
+    display: inline-block} /*para que se comporte como un elemento en linea y no como bloque*/
+dt{font-weight: bold;
+    color:#24BCB0}
+table{border:3px solid orange;
+border-collapse: collapse;}
+tr:hover{background-color: grey;}
+td, th{border:3px solid orange;
+        padding: 5px;
+        color: #24BCB0;}
+td{text-align: center;}
+iframe{display: block;
+        /*margin: auto;*/
+        float: right;}
+/*Vamos a utilizar un recurso media query
+se trata de incluir una especie de "if" y 
+una condicion para que cambie algo en el 
+estilo cuando tengo una pantalla pequeña*/
+@media only screen and (max-width:500px){
+    #wrapper{width:100%;}
+}
+
